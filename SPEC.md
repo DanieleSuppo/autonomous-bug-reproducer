@@ -150,4 +150,4 @@ The MVP is GitHub-first but separates Bug Source, Repository Provider, and Resul
 
 - This specification synthesizes the decisions in the Wayfinder map "Wayfinder: SPEC MVP completo da PRD" and preserves the MVP acceptance criteria in the PRD.
 - The project remains pre-implementation. This specification defines behavioral contracts and testing seams; implementation tickets should split the work along dependency edges without extracting generalized infrastructure before ABR demonstrates reuse.
-- `CONTEXT.md` is the canonical vocabulary for Run, Candidate Package, Verification Record, Terminal Disposition, Run Record, Evidence Item, integration roles, Reproduction Bundle, Benchmark Case, and Evaluation Oracle.
+- `GLOSSARY.md` is the canonical vocabulary for Run, Candidate Package, Verification Record, Terminal Disposition, Run Record, Evidence Item, integration roles, Reproduction Bundle, Benchmark Case, and Evaluation Oracle.
