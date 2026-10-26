@@ -1,8 +1,8 @@
 # Autonomous Bug Reproducer (ABR) — Product Requirements Document
 
-**Status:** Product definition complete; ready for architecture/specification
+**Status:** Product definition complete; technical [SPEC.md](../SPEC.md) and [SPEC issue #12](https://github.com/DanieleSuppo/autonomous-bug-reproducer/issues/12) already written; 23 implementation/benchmark tickets #13-#35 open (2026-10-26)
 
-**Product stage:** Pre-implementation
+**Product stage:** Pre-implementation; start with [issue #13](https://github.com/DanieleSuppo/autonomous-bug-reproducer/issues/13) through the installed ticket implementation workflow, rather than restarting discovery
 
 **Primary source of truth:** current repository README, refined by product discovery decisions captured in this PRD
 
