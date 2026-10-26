@@ -184,15 +184,14 @@ The guiding rule is simple:
 
 ## Roadmap
 
-The first development milestone focuses only on reliable bug reproduction:
+The first MVP is specified in [SPEC.md](SPEC.md) and tracked by [issue #12](https://github.com/DanieleSuppo/autonomous-bug-reproducer/issues/12) and the ready implementation tickets #13-#35. Product design, input/output contracts and the evaluation protocol are defined; the benchmark cases and runtime have **not** been executed or implemented.
 
-- formalize the input/output contract;
-- define the first benchmark dataset;
-- establish reproduction and false-positive criteria;
-- implement repository exploration and experiment execution;
-- produce minimal failing tests/scenarios;
-- capture structured traces and run metrics;
-- evaluate the system across repeatable cases.
+Implementation proceeds incrementally:
+
+- bootstrap the configured CLI and a controlled Run (#13), then immutable repository/issue inputs and eligibility;
+- build bounded investigation, verifier independence, outcome classification, portable reproduction bundle, trace and persistence according to their existing tickets;
+- implement the benchmark case authorship and evaluation tickets without turning measurement into an independent product;
+- demonstrate an end-to-end reproducible Run before claiming readiness.
 
 Later iterations may explore model/policy comparison, richer tracing, adaptive model routing and integration into broader agentic software-development workflows.
 
