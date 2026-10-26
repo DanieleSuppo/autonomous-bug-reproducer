@@ -198,10 +198,19 @@ Later iterations may explore model/policy comparison, richer tracing, adaptive m
 
 ## Project status
 
-ABR is currently at the **specification and benchmark-design stage**.
+**MVP technical specification and ticket decomposition are ready; product implementation has not started (2026-10-26).** The product boundary is in [docs/PRD.md](docs/PRD.md), the implementable design is in [SPEC.md](SPEC.md), and [SPEC issue #12](https://github.com/DanieleSuppo/autonomous-bug-reproducer/issues/12) tracks delivery. Wayfinder decisions #2-#11 are closed; map #1 and parent #12 remain open. The 23 implementation and benchmark tickets #13-#35 are open. There is no application source, runnable CLI or published product benchmark result yet.
 
-The repository intentionally starts with this README before implementation. The next artifacts will define the machine-readable input/output contract, evaluation protocol, initial architecture and benchmark cases.
+**Immediate unblocked ticket:** [#13, Bootstrap CLI, configuration and Run contract](https://github.com/DanieleSuppo/autonomous-bug-reproducer/issues/13). Implement a controlled UNSUPPORTED Run through the specified Run Orchestrator seam; do not restart broad discovery or demand a complete benchmark before the first vertical slice.
 
 ## Name
 
 **ABR** stands for **Autonomous Bug Reproducer**.
+
+## Development workflow and next handoff (2026-10-26)
+
+Use the installed Matt Pocock agent skills as provided. GitHub Issues are the tracker. Read [AGENTS.md](AGENTS.md), [issue-tracker configuration](docs/agents/issue-tracker.md), [domain guidance](docs/agents/domain.md), the [PRD](docs/PRD.md) and [SPEC.md](SPEC.md) before implementation. This records the current entry point, **not** a replacement workflow or a new custom skill.
+
+- **Completed:** product discovery -> Wayfinder decisions -> technical SPEC -> ticket decomposition (#13-#35).
+- **Now:** use the installed ticket implementation workflow, starting at `/implement #13` where available. Continue with the next genuinely unblocked GitHub ticket, retaining the skill's native planning, verification, review and delivery sequence.
+- **Later:** execute the specified benchmark protocol as its tickets land; do not claim reproducible bug outcomes or quality metrics until exercised.
+- **Reopen design only if** a specific implementation finding contradicts an agreed invariant; do not start Wayfinder again by default.
